@@ -14,4 +14,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "TryTwitter"
 include ':app'
-include ':businesss'
