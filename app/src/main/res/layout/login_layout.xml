@@ -7,6 +7,9 @@
     <variable
     name="mainActivity"
     type="com.example.trytwitter.MainActivity" />
+        <variable
+            name="mainViewModel"
+            type="com.example.trytwitter.MainViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -36,6 +39,7 @@
             android:layout_height="55dp"
             android:background="@color/white"
             android:hint="  username"
+            android:text="@={mainViewModel.name}"
             android:importantForAutofill="no"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -50,8 +54,8 @@
             android:layout_width="245dp"
             android:layout_height="55dp"
             android:background="@color/white"
+            android:text="@={mainViewModel.password}"
             android:hint="  password"
-
             android:inputType="textPassword"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -69,6 +73,7 @@
             android:textStyle="bold"
             android:backgroundTint="@color/white"
             android:textColor="@color/twitter_color"
+            android:onClick="@{() -> mainViewModel.onClickLoginButton()}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
