@@ -5,7 +5,7 @@ class UserMapper {
         fun getUsersList(): List<User> {
             val usersList = mutableListOf<User>()
             for (i in 0..5) {
-                usersList.add(User("admin","admin"))
+                usersList.add(User("admin${i}","admin${i}"))
             }
             return usersList
         }
