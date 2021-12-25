@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TryTwitter</string>
+    <string name="username_or_email">Username or email</string>
+    <string name="password">Password</string>
+    <string name="login">Log In</string>
+
 </resources>
